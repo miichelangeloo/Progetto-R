@@ -1,0 +1,163 @@
+---
+title: "Trasporti e qualità aria"
+author: "Leonardo Michelangelo Zoffi"
+date: '2022-07-01'
+output: ioslides_presentation
+df_print: paged
+runtime: shiny
+
+
+---
+
+
+
+```{r setup, include=FALSE}
+library(kableExtra)
+library(tidyverse)
+library(dplyr)
+library(ggplot2)
+library(plotly)
+library(readr)
+library(reshape2)
+library(gganimate)
+library(cowplot)
+library(stringr)
+
+#knitr::opts_knit$set(root.dir = '/Users/leonardozoffi/Desktop/Università/Data Science/Progetto R/Tutto per progetto')
+knitr::opts_chunk$set(echo = FALSE)
+source("Progetto finale.r")
+```
+
+## Caso di studio
+
+Si vogliono analizzare le abitudini dei cittadini italiani in relazione all'utilizzo dei mezzi di trasporto.
+I dati analizzati verranno trasformati in grafici per una più facile comprensione del loro significato.
+I principali fattori che si vogliono analizzare sono:
+
+* La percentuale di persone che usano mezzi per spostarsi
+* La quantità di macchine presenti in ambito regionale per alimentazione
+* La qualità dell'aria delle realtà analizzate
+* L'evoluzione nel tempo di tutti i fattori sopra citati
+
+## Media italiana
+```{r}
+IPlotA
+
+```
+## Regione con maggior percentuale di persone che vanno a lavoro piedi
+
+```{r}
+hgst <- SpLC1721A[-4] %>%
+  filter(variable == "vanno.a.piedi")%>%
+  group_by(X, variable) %>%
+  summarise_each(funs(mean(., na.rm = TRUE))) 
+ 
+k =hgst$X[which.max(hgst$value)]
+
+
+bestA <- SpLC1721A%>%
+ filter(SpLC1721A$X==k)
+ 
+plot_ly(bestA, labels = bestA$variable, values = bestA$value, type = 'pie', frame=bestA$Anno) %>%
+     layout(
+        title = "Valle d'Aosta",
+        xaxis = list(showgrid = FALSE, zeroline = FALSE, showticklabels = FALSE),
+        yaxis = list(showgrid = FALSE, zeroline = FALSE, showticklabels = FALSE)
+     )
+
+
+```
+## Popolazione di ogni regione
+
+```{r}
+PopReg <-read.csv("PopReg.csv", sep= ';', header = FALSE)
+PopReg <- PopReg[order(PopReg$V2),]
+names(PopReg) <- NULL
+s <- PopReg[1:10,]
+d <- PopReg[11:20,]
+rownames(s) <- NULL
+rownames(d) <- NULL
+knitr::kables(
+  list(
+    kable(s),
+    kable(d)
+  ))%>%
+  kable_styling(bootstrap_options = c("striped", "hover"))
+
+```
+La Valle d'Aosta è la regione meno popolata d'Italia.
+
+## Regione con minore percentuale di persone che vanno a piedi
+```{r}
+hgst <- SpLC1721A[-4] %>%
+  filter(variable == "vanno.a.piedi")%>%
+  group_by(X, variable) %>%
+  summarise_each(funs(mean(., na.rm = TRUE))) 
+ 
+k =hgst$X[which.min(hgst$value)]
+
+worstA <- SpLC1721A%>%
+ filter(SpLC1721A$X==k)
+
+plot_ly(worstA, labels = worstA$variable, values = worstA$value, type = 'pie', frame=worstA$Anno) %>%
+     layout(
+        title = "Veneto",
+        xaxis = list(showgrid = FALSE, zeroline = FALSE, showticklabels = FALSE),
+        yaxis = list(showgrid = FALSE, zeroline = FALSE, showticklabels = FALSE)
+     )
+
+
+```
+## Rappresentazione utilizzo dei mezzi in Veneto
+```{r}
+regPlotsB[[6]]
+```
+
+## Difficoltà collegamento mezzi veneto
+```{r}
+regMCs1721[[6]]
+```
+
+## Parco auto Veneto
+```{r message=FALSE, warning=FALSE}
+ suppressWarnings(regPa1720[[7]])
+```
+
+## Premessa 
+
+* PM10
+* PM2.5
+* NO2
+
+Unknown author (‎2013)‎. Health risks of air pollution in Europe – HRAPIE project. Recommendations for concentration–response functions for cost–benefit analysis of particulate matter, ozone and nitrogen dioxide. WHO Regional Office for Europe. https://apps.who.int/iris/handle/10665/153692
+
+
+## Qualità aria Veneto
+```{r}
+QARegPlot[[20]]
+```
+
+## Qualità aria Valle d'Aosta
+```{r}
+QARegPlot[[19]]
+```
+
+
+## Qualità aria Italia
+```{r}
+QAI1721Plot
+```
+
+## Conclusioni
+L'andamento dei dati sembra suggerire che l'utilizzo delle macchine non sia correlato elevatamente al PM10, quanto invece lo sembra al PM2.5. 
+
+Oppure, la prolungata presenza a casa durante il periodo di quarantena ha determinato un maggiore utilizzo di impianti di riscaldamento che hanno compensato le mancate emissioni delle macchine.
+
+
+## Fonti
+
+   Istat, banca dati StatBase: https://www.istat.it/it/dati-analisi-e-prodotti/banche-dati/statbase
+   
+   Aci, open data: https://www.aci.it/laci/studi-e-ricerche/dati-e-statistiche/open-data.html
+
+ 

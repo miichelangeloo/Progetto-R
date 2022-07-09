@@ -1,0 +1,300 @@
+﻿Comune;"PM10
+valore della
+concentrazione
+media annua 
+(in µg/m3)";"PM2,5
+valore della
+concentrazione
+media annua
+(in µg/m3)";"NO2
+valore della
+concentrazione
+media annua di
+(in µg/m3)";"B(a)P
+valore della
+concentrazione
+media annua di
+(in mg/m3)"
+Torino;;;42;
+Torino;30;22;31;0,7
+Torino;32;20;26;
+Torino;36;;46;0,8
+Vercelli;26;18;13;0,4
+Vercelli;32;17;21;
+Novara;26;;31;0,3
+Novara;;;25;0,3
+Biella;17;12;16;0,3
+Biella;25;;25;0,5
+Cuneo;19;14;21;0,2
+Verbania;14;11;15;0,2
+Asti;32;;28;0,9
+Asti;29;22;18;
+Alessandria;33;;32;0,4
+Alessandria;30;21;20;0,4
+Aosta;17;12;20;0,9
+Aosta;18;11;21;0,5
+Aosta;18;11;21;0,9
+Savona;18;12;22;
+Savona;17;10;12;0,1
+Savona;0;0;0;0
+Genova;;;;
+Genova;14;;23;
+Genova;13;6;12;
+Genova;17;;30;
+Genova;20;;34;
+Genova;;;;
+Genova;22;;35;
+Genova;25;;44;
+Genova;20;13;48;
+La Spezia;15;;20;
+La Spezia;15;8;20;0,2
+La Spezia;19;11;20;0,2
+La Spezia;17;;23;
+La Spezia;;;9;
+La Spezia;20;12;38;
+La Spezia;;;7;
+La Spezia;;;5;
+Varese;23;19;26;0,2
+Varese;;;19;
+Como;28;22;31;
+Lecco;21;;33;
+Lecco;20;14;21;
+Sondrio;20;;20;
+Sondrio;20;16;16;1,2
+Milano;36;25;41;0,2
+Milano;32;;37;
+Milano;;;39;
+Milano;35;;48;
+Milano;32;22;30;0,2
+Monza;32;22;45;
+Monza;29;;31;
+Bergamo;30;;31;
+Bergamo;27;22;22;0,3
+Brescia;29;20;26;
+Brescia;32;24;25;0,4
+Brescia;;;41;
+Pavia;32;;31;
+Pavia;30;23;25;
+Lodi;33;17;29;
+Lodi;31;24;26;
+Cremona;35;26;27;
+Cremona;34;24;24;
+Cremona;28;;20;
+Mantova;30;;23;
+Mantova;31;;27;
+Mantova;30;20;22;0,4
+Mantova;34;;23;
+Bolzano - Bozen;18;12;33;
+Bolzano - Bozen;16;11;31;0,7
+Bolzano - Bozen;;;25;
+Trento;19;13;29;0,7
+Trento;21;;36;
+Verona;33;;24;
+Verona;30;22;19;0,5
+Vicenza;33;;25;
+Vicenza;32;25;29;1
+Vicenza;31;23;22;
+Belluno;20;;24;
+Belluno;16;13;14;1,1
+Treviso;32;23;24;1,7
+Treviso;33;;21;
+Venezia;32;25;24;0,9
+Venezia;33;;23;
+Venezia;37;;28;
+Venezia;36;;29;
+Venezia;36;28;26;1,4
+Venezia;28;22;32;
+Padova;36;;28;1,3
+Padova;32;25;26;1,3
+Padova;37;;;1,2
+Padova;37;28;27;1,4
+Padova;32;25;26;1,3
+Rovigo;34;23;25;
+Rovigo;31;;18;0,8
+Pordenone;26;18;23;0,8
+Udine;20;14;17;0,7
+Udine;18;;;
+Udine;21;;20;
+Gorizia;19;13;21;0,5
+Trieste;18;;;
+Trieste;18;;23;
+Trieste;18;;21;
+Trieste;11;;;
+Trieste;19;12;20;0,3
+Piacenza;29;;27;
+Piacenza;29;22;29;
+Piacenza;27;21;19;
+Piacenza;31;21;30;
+Parma;28;;28;
+Parma;30;18;19;0,1
+Reggio nell'Emilia;32;;29;
+Reggio nell'Emilia;27;19;18;
+Modena;32;;24;
+Modena;31;19;25;0,2
+Modena;30;;16;
+Modena;30;21;17;
+Modena;33;;34;
+Bologna;24;15;17;0,1
+Bologna;26;17;38;0,2
+Bologna;22;;20;
+Ferrara;31;;28;0,2
+Ferrara;28;18;17;0,2
+Ferrara;26;18;19;
+Ferrara;;;;
+Ferrara;34;25;22;0,2
+Ravenna;29;;28;0,2
+Ravenna;26;;20;0,2
+Ravenna;26;19;18;0,1
+Forlì;25;;24;
+Forlì;22;14;17;
+Cesena;24;;20;
+Rimini;31;;32;
+Rimini;27;17;19;0,3
+Massa;14;11;50;
+Lucca;24;;18;0,8
+Lucca;;;9;
+Lucca;26;;21;
+Pistoia;20;;18;
+Firenze;19;13;17;0,4
+Firenze;18;;;
+Firenze;23;14;44;0,5
+Firenze;20;;28;
+Firenze;;;6;
+Prato;24;15;25;
+Prato;23;15;24;0,7
+Livorno;22;11;33;
+Livorno;16;8;15;
+Livorno;17;;16;0,1
+Pisa;21;13;14;
+Pisa;23;15;27;
+Arezzo;27;;28;
+Arezzo;19;13;13;0,3
+Siena;18;;27;
+Grosseto;22;;29;
+Grosseto;15;9;13;
+Grosseto;;;3;
+Perugia;19;12;16;0,3
+Perugia;21;13;18;
+Perugia;19;12;19;
+Terni;28;21;21;1
+Terni;28;19;23;0,8
+Terni;30;21;16;0,9
+Terni;28;18;16;
+Terni;32;21;25;
+Pesaro;23;13;24;
+Ancona;22;14;17;0,1
+Ancona;26;14;21;
+Macerata;16;8;11;
+Ascoli Piceno;22;13;10;
+Viterbo;17;10;15;
+Rieti;18;12;12;2
+Roma;26;13;30;0
+Roma;27;0;27;
+Roma;20;11;10;0
+Roma;27;16;30;1,4
+Roma;23;13;32;0
+Roma;24;13;38;1
+Roma;28;0;47;0
+Roma;27;0;31;0
+Roma;28;0;41;0
+Roma;25;16;17;0
+Roma;23;15;21;0
+Roma;32;0;41;0
+Roma;23;14;25;0,9
+Latina;23;;24;
+Latina;24;;20;
+Latina;21;12;22;
+Frosinone;36;;30;
+Frosinone;24;18;22;
+L'Aquila;16;10;14;0,2
+L'Aquila;;;8;
+L'Aquila;;;2;
+Teramo;24;;26;0,1
+Teramo;;13;21;
+Pescara;24;14;18;
+Pescara;24;15;20;
+Pescara;23;;23;
+Chieti;21;16;14;0,3
+Caserta;18;12;19;
+Caserta;30;11;18;
+Benevento;20;12;;
+Benevento;9;;;
+Benevento;;;;
+Napoli;30;17;42;0,2
+Napoli;32;;35;
+Napoli;25;;35;
+Napoli;29;11;17;0,1
+Napoli;34;22;35;
+Napoli;26;16;39;
+Avellino;29;23;17;
+Avellino;37;18;20;
+Salerno;26;6;12;0
+Salerno;20;13;23;
+Salerno;;15;29;
+Foggia;16;9;16;
+Andria;23;22;23;0
+Barletta;22;13;17;
+Bari;22;15;28;
+Bari;22;;21;
+Bari;24;15;29;
+Bari;24;;16;
+Bari;22;;18;
+Taranto;21;11;20;
+Taranto;20;;10;
+Taranto;22;12;22;
+Taranto;24;12;20;
+Taranto;16;9;6;
+Taranto;19;;9;
+Taranto;27;16;;
+Brindisi;18;;11;
+Brindisi;22;12;17;
+Brindisi;16;;15;
+Brindisi;20;12;12;0,2
+Brindisi;20;;19;
+Brindisi;17;10;14;
+Brindisi;19;;16;
+Lecce;20;14;12;0,2
+Lecce;19;11;5;0,1
+Lecce;22;13;19;0,6
+Potenza;12;;;
+Potenza;;;8;
+Potenza;19;;;
+Potenza;22;;;
+Matera;;;7;
+Cosenza;19;11;17;0,3
+Crotone;21;7;22;0,3
+Crotone;5;;19;
+Catanzaro;13;9;8;
+Catanzaro;20;;20;
+Vibo Valentia;19;;16;0,4
+Vibo Valentia;17;10;5;0,4
+Reggio di Calabria;18;;15;
+Reggio di Calabria;19;10;10;0,1
+Trapani;17;;15;0,1
+Messina;;;;
+Messina;;;19;
+Caltanissetta;23;;22;
+Caltanissetta;;;13;
+Enna;15;7;4;
+Catania;;;;
+Catania;;;;
+Ragusa;20;9;9;
+Ragusa;17;;9;
+Ragusa;20;;8;
+Siracusa;15;7;6;
+Siracusa;21;10;18;
+Siracusa;22;11;25;
+Siracusa;23;11;18;
+Sassari;16;;18;0
+Sassari;14;;3;
+Sassari;21;6;10;0
+Nuoro;8;;24;
+Nuoro;11;;10;
+Oristano;26;;6;
+Oristano;29;;11;
+Cagliari;16;7;10;0,3
+Cagliari;23;;18;0,3
+Cagliari;35;17;16;0,3
+Carbonia;10;;5;
+;;;;
+Fonte: Istat, Dati ambientali nelle città;;;;

@@ -1,0 +1,81 @@
+---
+title: "Tutte regioni A"
+author: "Leonardo Michelangelo Zoffi"
+date: "`r Sys.Date()`"
+output: html_document
+runtime: shiny
+---
+
+```{r setup, include=FALSE}
+library(tidyverse)
+library(dplyr)
+library(ggplot2)
+library(plotly)
+library(readr)
+library(reshape2)
+library(gganimate)
+library(cowplot)
+library(stringr)
+
+#knitr::opts_knit$set(root.dir = '/Users/leonardozoffi/Desktop/Università/Data Science/Progetto R/Tutto per progetto')
+knitr::opts_chunk$set(echo = FALSE)
+
+
+source("Progetto finale.r")
+```
+```{r A,results='asis'}
+
+htmltools::tagList(map(unique(SpLC1721A$X), ~SpLC1721A %>%
+                         filter(X == .x ) %>%
+                         plot_ly(labels = ~variable, values = ~value, 
+                                 type = 'pie', frame = ~Anno)%>%
+                         layout(title = .x ,
+                                xaxis = list(showgrid = FALSE, zeroline = FALSE, 
+                                             showticklabels = FALSE),
+                                yaxis = list(showgrid = FALSE, zeroline = FALSE, 
+                                             showticklabels = FALSE))
+                
+))
+
+```
+
+## B
+
+```{r B,results='asis'}
+
+htmltools::tagList(map(unique(SpLC1721B$X), ~SpLC1721B %>%
+                         filter(X == .x ) %>%
+                         plot_ly(labels = ~variable, values = ~value, 
+                                 type = 'pie', frame = ~Anno)%>%
+                         layout(title = .x ,
+                                xaxis = list(showgrid = FALSE, zeroline = FALSE, 
+                                             showticklabels = FALSE),
+                                yaxis = list(showgrid = FALSE, zeroline = FALSE, 
+                                             showticklabels = FALSE))
+                
+))
+
+```
+
+```{r C,results='asis',message=FALSE, warning=FALSE}
+
+htmltools::tagList(map(unique (PaAAle1720$REGIONE), ~PaAAle1720 %>%
+             filter(REGIONE==.x ) %>%
+               group_by(ALIMENTAZIONE)%>%
+              plot_ly(x = ~Anno, y = ~TOTALE, type = 'scatter', mode = 'lines+markers', color=~ALIMENTAZIONE)%>%
+               layout(title=.x)
+             
+             )
+                
+)
+
+```
+
+```{r D,results='asis',message=FALSE, warning=FALSE}
+
+htmltools::tagList(map(unique(QA1721M$Regione), ~QA1721M%>%
+                 filter(Regione==.x ) %>%
+                 plot_ly(x = ~Anno, y = ~value, type = 'scatter', mode = 'lines+markers', color= ~variable)%>%
+                 layout(title=.x)))
+                 
+```
